@@ -9,7 +9,7 @@ body {
 
 .wrapper {
   display: grid;
-  grid-template-columns: [line1] 2% [line2] 15% [line3] 71% [line4] 10% [line5] 2%;
+  grid-template-columns: [line1] 2% [line2] 9% [line3] 84% [line4] 3% [line5] 2%;
   grid-template-rows: [row1] 5% [row2] 10% [row3] 60% [row4] 20% [row5] 5%;
   width: 100vw;
   height: 100vh;
@@ -94,5 +94,62 @@ a:visited:active {
 
 a:hover {
   color: white; }
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-around;
+  align-self: baseline; }
+
+.column img {
+  margin-top: 1vh; }
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%; } }
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%; } }
+.container {
+  position: relative;
+  width: 75%; }
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid black; }
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(207, 191, 154, 0.7); }
+
+.container:hover .overlay {
+  opacity: 1; }
+
+.text {
+  color: white;
+  font-size: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center; }
 
 /*# sourceMappingURL=main.css.map */
