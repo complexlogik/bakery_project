@@ -6,9 +6,12 @@
 }
 
 body {
-  background: white;
+  background-image: url('/images/bakery_bg2.jpg');
   width: 100vw;
   height: 100vh;
+  background-repeat: repeat;
+  @import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
+  font-family: 'Kaushan Script', cursive;
 }
 
 .wrapper {
@@ -18,12 +21,18 @@ body {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-
 }
 
-.content {
-  @include startGrid(line3,line4 ,row2 ,row5 );
-  background: white;
+.content_box {
+  @include startGrid(line3,
+  line4,
+  row2,
+  row5);
+   background: linear-gradient( rgba(255, 255, 255, .7), rgba(20, 20, 20, .5)),
+  url('/images/content_bg.jpg');
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+
   padding: 3vh 3vw;
   margin: 1vh 1vw;
   border: black solid 1px;
@@ -31,38 +40,57 @@ body {
 }
 
 
-// navbar
+.content {
+  @include startGrid(line3,
+  line4,
+  row3,
+  row5);
+  padding: 6vh 3vw;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 2em;
+}
 
-.nav_wrapper{
- @include startGrid(line2, line5, row3, row4);
- margin: 1vw;
- z-index: 0;
+.heading {
+  // box-shadow: 8px 8px 1px -2px #F2DFB1;
+  text-align: center;
+  padding-bottom: .5vh;
+  font-size: 1em;
+}
+
+// navbar
+.nav_wrapper {
+  @include startGrid(line2,
+  line5,
+  row3,
+  row4);
+  margin: 1vw;
+  z-index: 0;
 }
 
 .nav {
   background: black;
   color: rgb(255, 251, 251);
   cursor: pointer;
-  padding: 10vh 1vw 5vh 1vw ;
+  padding: 10vh 1vw 5vh 1vw;
   height: 5px;
   width: 100%;
   border: none;
   text-align: left;
   outline: none;
+ font-family: 'Kaushan Script',
+  cursive;
   font-size: 15px;
   transition: 0.4s;
   background-size: cover;
   z-index: 0;
-  text-align: left;
 }
 
 .active,
 .nav:hover {
-  background-color: rgb(67, 150, 175);
+  background-color: rgb(207, 191, 154);
 }
 
 // link style
-
 ul,
 a:link,
 a:visited {
@@ -79,5 +107,4 @@ a:visited:active {
 
 a:hover {
   color: white;
-
 }
