@@ -1,0 +1,68 @@
+body {
+  background: white;
+  width: 100vw;
+  height: 100vh; }
+
+.wrapper {
+  display: grid;
+  grid-template-columns: [line1] 2% [line2] 15% [line3] 71% [line4] 10% [line5] 2%;
+  grid-template-rows: [row1] 5% [row2] 10% [row3] 60% [row4] 20% [row5] 5%;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden; }
+
+.content {
+  grid-column-start: line3;
+  grid-column-end: line4;
+  grid-row-start: row2;
+  grid-row-end: row5;
+  background: white;
+  padding: 3vh 3vw;
+  margin: 1vh 1vw;
+  border: black solid 1px;
+  z-index: 1; }
+
+.nav_wrapper {
+  grid-column-start: line2;
+  grid-column-end: line5;
+  grid-row-start: row3;
+  grid-row-end: row4;
+  margin: 1vw;
+  z-index: 0; }
+
+.nav {
+  background: black;
+  color: #fffbfb;
+  cursor: pointer;
+  padding: 10vh 1vw 5vh 1vw;
+  height: 5px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  background-size: cover;
+  z-index: 0;
+  text-align: left; }
+
+.active,
+.nav:hover {
+  background-color: #4396af; }
+
+ul,
+a:link,
+a:visited {
+  color: white;
+  text-decoration: none;
+  cursor: pointer; }
+
+ul,
+a:link:active,
+a:visited:active {
+  color: white; }
+
+a:hover {
+  color: white; }
+
+/*# sourceMappingURL=main.css.map */

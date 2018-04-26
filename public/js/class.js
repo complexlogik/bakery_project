@@ -39,4 +39,14 @@ class Cakes extends Pastry {
   }
 }
 
+class CupCakes extends Pastry {
+  constructor(allCupCakes) {
+    super(price, description, image);
+    this.allCupCakes = [];
+  }
+  allCupCakes() {
+    return this.allCupCakes;
+  }
+}
+
 chocolate_cake = new Cakes("$10", "chocolate goodness", "url");
