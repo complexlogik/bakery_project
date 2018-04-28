@@ -1,4 +1,4 @@
-let muffinSelector = [
+let allMuffins = [
   ciniroll,
   appleOat,
   blueberryMuffin,
@@ -10,7 +10,7 @@ let muffinSelector = [
   chocolatechipmuffin
 ];
 
-let allMuffins = [
+let muffinSelector = [
   "muffin1",
   "muffin2",
   "muffin3",
