@@ -111,14 +111,6 @@ let cakeSelector = [
 //    " Description: " + allCakes[i].description;
 // }
 
-let allCookies = [
-  choc_cookie,
-  oatmeal_cookie,
-  almond_cookie,
-  red_velvet_cookie,
-  sugar_cookie
-];
-let cookieSelector = ["#cookie1", "#cookie2", "#cookies3", "#cookie4", "#cookie5"];
 
 let choc_cookie = new Pastry(
   "$1",
@@ -143,10 +135,29 @@ let sugar_cookie = new Pastry(
 //     allCookies[i].price
 //   } </br> Description: ${allCakes[i].description}`;
 // }
-
+let allCookies = [
+  choc_cookie,
+  oatmeal_cookie,
+  almond_cookie,
+  red_velvet_cookie,
+  sugar_cookie
+];
+let cookieSelector = [
+  "#cookie1",
+  "#cookie2",
+  "#cookies3",
+  "#cookie4",
+  "#cookie5"
+];
 
 allCakes.forEach((cake, i) => {
   document.querySelector(cakeSelector[i]).innerHTML = `Name: ${
     cake.name
   } <br> Price: ${cake.price} <br> Description: ${cake.description}`;
+});
+
+allCookies.forEach((cookie, i) => {
+  document.querySelector(cookieSelector[i]).innerHTML = `Name: ${
+    cookie.name
+  } <br> Price: ${cookie.price} <br> Description: ${cookie.description}`;
 });
