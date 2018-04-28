@@ -32,7 +32,7 @@ post '/contact_us' do
   subject = "Our Catalog"
   content = Content.new(
     type: 'text',
-    value: "asasa"
+    value: "https://polar-beach-77144.herokuapp.com/"
   )
 
   mail = Mail.new(from, subject, to, content)
