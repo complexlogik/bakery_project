@@ -29,11 +29,10 @@ body {
   line4,
   row2,
   row5);
-  background: linear-gradient( rgba(255, 255, 255, .2), rgba(20, 20, 20, .7)),; 
-  
-  // url('/images/content_bg.jpg');
-  background-size: 100vw 100vh;
-  background-repeat: no-repeat;
+  background: linear-gradient( rgba(255, 255, 255, .2), rgba(0, 0, 0, .3)),
+   url('/images/content_bg3.jpg');
+  // background-size: 100vw 100vh;
+  background-repeat: repeat;
   padding: 3vh 3vw;
   margin: 1vh 1vw;
   border: black solid 1px;
@@ -149,7 +148,7 @@ a:hover {
 
 @media screen and (max-width: 800px) {
   .column {
-    -ms-flex: 50%;
+    
     flex: 50%;
     max-width: 50%;
   }
@@ -159,7 +158,7 @@ a:hover {
 
 @media screen and (max-width: 600px) {
   .column {
-    -ms-flex: 100%;
+    
     flex: 100%;
     max-width: 100%;
   }

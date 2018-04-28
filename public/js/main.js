@@ -112,30 +112,30 @@ let redVelvetCookie = new Pastry(
 );
 
 let fakeCookie1 = new Pastry(
-  "chocolate cookie",
+  "Pistachio Cookie",
   "$1",
-  "yummy chocolate cookie"
+  "yummy Pistachio Cookie"
 );
 
 let fakeCookie2 = new Pastry(
-  "chocolate cookie",
+  "Rasberry Center Cookie",
   "$1",
-  "yummy chocolate cookie"
+  "yummy rasberry center cookie"
 );
 let fakeCookie3 = new Pastry(
-  "chocolate cookie",
+  "Walnut cookie",
   "$1",
-  "yummy chocolate cookie"
+  "yummy walnut topped cookie"
 );
 let fakeCookie4 = new Pastry(
-  "chocolate cookie",
+  "Frosting cookie",
   "$1",
-  "yummy chocolate cookie"
+  "yummy frosting cookie"
 );
 let fakeCookie5 = new Pastry(
-  "chocolate cookie",
+  "Sprinkle topped cookie",
   "$1",
-  "yummy chocolate cookie"
+  "yummy sprinke top cookie"
 );
 
 // for (let i = 0; i <= allCookies.length; i++) {
@@ -143,3 +143,42 @@ let fakeCookie5 = new Pastry(
 //     allCookies[i].price
 //   } </br> Description: ${allCakes[i].description}`;
 // }
+
+let ciniroll = new Pastry(
+  "Cinimonroll Muffin", 
+  "$2.99", 
+  "yummy cinimonroll muffin"
+);
+
+let appleOat= new Pastry(
+  "Apple Oat muffin", 
+  "$3.99", 
+  "yummy appleoat muffin"
+);
+
+let blueberryMuffin = new Pastry(
+  "Blueberry muffin",
+  "$1000.00",
+  "yummy blueberry muffin"
+);
+
+let erdbeerMuffin = new Pastry(
+  "Erdbeer Muffin",
+  "$19",
+  "yummy erdbeer muffin"
+);
+
+let lemonBlueberry = new Pastry("lemon blueberry", "$22", "yummy lemonblueberry");
+
+let meatnegg = new Pastry("Meat and egg", "$98", "yummy Meat and egg");
+
+let cornbread = new Pastry("cornbread muffin", "$57", "yummy cornbread muffin");
+
+let ricottafig = new Pastry("ricottafig muffin", "$77", "yummy ricottafig muffin");
+
+let chocolatechipmuffin = new Pastry(
+  "chocolate chip muffin",
+  "$2.88",
+  "yummy chocolate chip muffin"
+);
+
