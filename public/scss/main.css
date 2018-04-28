@@ -20,23 +20,33 @@ body {
   grid-column-end: line4;
   grid-row-start: row2;
   grid-row-end: row5;
-  background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(20, 20, 20, 0.5)), url("/images/content_bg.jpg");
+  background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(20, 20, 20, 0.7)), url("/images/content_bg.jpg");
   background-size: 100vw 100vh;
   background-repeat: no-repeat;
   padding: 3vh 3vw;
   margin: 1vh 1vw;
   border: black solid 1px;
   z-index: 1;
-  overflow: scroll; }
+  overflow: scroll;
+  color: white;
+  text-shadow: 2px 2px black; }
 
 .content {
+  display: inline;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 2em;
+  z-index: 2;
+  background-size: contain;
+  overflow: inherit; }
+
+.store_info {
   grid-column-start: line3;
   grid-column-end: line4;
-  grid-row-start: row3;
-  grid-row-end: row5;
-  padding: 6vh 3vw;
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 2em; }
+  grid-row-start: line3;
+  grid-row-end: line4;
+  margin-right: 50vw;
+  justify-content: center;
+  text-align: center; }
 
 .heading {
   text-align: center;
@@ -59,6 +69,13 @@ body {
   grid-row-end: row4;
   margin: 1vw;
   z-index: 0; }
+
+#slide1 {
+  background: url("/images/slide1.jpg");
+  background: black;
+  z-index: 5;
+  height: 100%;
+  position: absolute; }
 
 .nav {
   background: black;
@@ -133,18 +150,20 @@ a:hover {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 100%;
-  width: 100%;
+  height: 125%;
+  width: 125%;
   opacity: 0;
   transition: .5s ease;
-  background-color: rgba(207, 191, 154, 0.7); }
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 3; }
 
 .container:hover .overlay {
   opacity: 1; }
 
 .text {
   color: white;
-  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%;
   position: absolute;
   top: 50%;
   left: 50%;

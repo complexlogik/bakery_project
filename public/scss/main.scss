@@ -29,7 +29,7 @@ body {
   line4,
   row2,
   row5);
-  background: linear-gradient( rgba(255, 255, 255, .3), rgba(20, 20, 20, .5)), url('/images/content_bg.jpg');
+  background: linear-gradient( rgba(255, 255, 255, .2), rgba(20, 20, 20, .7)), url('/images/content_bg.jpg');
   background-size: 100vw 100vh;
   background-repeat: no-repeat;
   padding: 3vh 3vw;
@@ -37,16 +37,23 @@ body {
   border: black solid 1px;
   z-index: 1;
   overflow: scroll;
+  color: white;
+  text-shadow: 2px 2px black;
 }
 
 .content {
-  @include startGrid(line3,
-  line4,
-  row3,
-  row5);
-  padding: 6vh 3vw;
+  display: inline;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 2em;
+  z-index: 2;
+  background-size: contain;
+  overflow: inherit;
+}
+.store_info{
+  @include startGrid(line3,line4 ,line3 ,line4);
+  margin-right: 50vw;
+  justify-content: center;
+  text-align: center;
 }
 
 .heading {
@@ -72,6 +79,14 @@ body {
   row4);
   margin: 1vw;
   z-index: 0;
+}
+
+#slide1 {
+ background: url("/images/slide1.jpg");
+ background: black;
+ z-index: 5;
+ height: 100%;
+ position: absolute;
 }
 
 .nav {
@@ -166,11 +181,12 @@ a:hover {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 100%;
-  width: 100%;
+  height: 125%;
+  width: 125%;
   opacity: 0;
   transition: .5s ease;
-  background-color : rgba(207, 191, 154, .7);
+  background-color : rgba(0,0,0,.9);
+  z-index: 3;
 }
 
 .container:hover .overlay {
@@ -179,7 +195,10 @@ a:hover {
 
 .text {
   color: white;
-  font-size: 15px;
+  font-family: Arial,
+  Helvetica,
+  sans-serif;
+  font-size: 100%;
   position: absolute;
   top: 50%;
   left: 50%;

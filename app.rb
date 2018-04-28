@@ -30,10 +30,10 @@ end
 post '/contact_us' do
   from = Email.new(email: 'complex.logik@gmail.com')
   to = Email.new(email: params[:email])
-  subject = params[:subject]
+  subject = "Our Catalog"
   content = Content.new(
     type: 'text',
-    value: params[:content]
+    value: "asasa"
   )
 
   mail = Mail.new(from, subject, to, content)
@@ -43,11 +43,5 @@ post '/contact_us' do
   )
 
   response = sg.client.mail._('send').post(request_body: mail.to_json)
-
-  puts response.status_code
-
-  puts response.body
-
-  puts response.headers
-  redirect '/thanks'
+ redirect "/thanks"
 end
