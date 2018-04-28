@@ -5,37 +5,6 @@ class Pastry {
   }
 }
 
-// class Muffins extends Pastry {
-//   constructor(allMuffins) {
-//     super(name,price, description, image);
-//     this.allMuffins = [];
-//   }
-//   allMuffins() {
-//     return this.all;
-//   }
-// }
-
-// class Cookies extends Pastry {
-//   constructor(allCookies) {
-//     super(name, price, description, image);
-//     this.allCookies = [];
-//   }
-//   allCookies() {
-//     return this.allCookies;
-//   }
-// }
-
-// class Cakes extends Pastry {
-//   super(name, price, description, image)
-//   constructor(allCakes) {
-//     // super(name, price, description, image);
-//     this.allCakes = [];
-//   }
-//   allCakes() {
-//     return this.allCakes;
-//   }
-// }
-
 let layerCake = new Pastry(
   "Layer Cake",
   "$7.99",
@@ -80,12 +49,6 @@ let fudgeCake = new Pastry(
 let cupsCake = new Pastry("Cake in Cups", "$33.99", "yes they are worth it");
 
 let frostedCake = new Pastry("Frosted Cake", "$77.99", "Special Cake");
-
-// for (let i = 0; i <= allCakes.length; i++) {
-//   document.querySelector(cakeSelector[i]).innerHTML = "Name:" + allcakes[i].name + " Price: " +
-//     allCakes[i].price +
-//    " Description: " + allCakes[i].description;
-// }
 
 let chocCookie = new Pastry(
   "chocolate cookie",
@@ -137,12 +100,6 @@ let fakeCookie5 = new Pastry(
   "$1",
   "yummy sprinke top cookie"
 );
-
-// for (let i = 0; i <= allCookies.length; i++) {
-//   document.querySelector(cookieSelector[i]).innerHTML = `Price: ${
-//     allCookies[i].price
-//   } </br> Description: ${allCakes[i].description}`;
-// }
 
 let ciniroll = new Pastry(
   "Cinimonroll Muffin", 

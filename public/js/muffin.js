@@ -1,3 +1,5 @@
+
+
 let allMuffins = [
   ciniroll,
   appleOat,
@@ -11,15 +13,15 @@ let allMuffins = [
 ];
 
 let muffinSelector = [
-  "muffin1",
-  "muffin2",
-  "muffin3",
-  "muffin4",
-  "muffin5",
-  "muffin6",
-  "muffin7",
-  "muffin8",
-  "muffin9"
+  "#muffin1",
+  "#muffin2",
+  "#muffin3",
+  "#muffin4",
+  "#muffin5",
+  "#muffin6",
+  "#muffin7",
+  "#muffin8",
+  "#muffin9"
 ];
 
 allMuffins.forEach((muffin, i) => {

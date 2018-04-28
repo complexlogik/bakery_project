@@ -1,4 +1,4 @@
-prompt("cookies work!");
+
 
 let allCookies = [
   chocCookie,
