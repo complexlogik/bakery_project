@@ -20,7 +20,7 @@ body {
   grid-column-end: line4;
   grid-row-start: row2;
   grid-row-end: row5;
-  background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(20, 20, 20, 0.7)), url("/images/content_bg.jpg");
+  background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(20, 20, 20, 0.7));
   background-size: 100vw 100vh;
   background-repeat: no-repeat;
   padding: 3vh 3vw;
