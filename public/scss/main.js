@@ -105,11 +105,11 @@ let cakeSelector = [
   "#cake9"
 ];
 
-for (let i = 0; i <= allCakes.length; i++) {
-  document.querySelector(cakeSelector[i]).innerHTML = "Name:" + allcakes[i].name + " Price: " +
-    allCakes[i].price +
-   " Description: " + allCakes[i].description;
-}
+// for (let i = 0; i <= allCakes.length; i++) {
+//   document.querySelector(cakeSelector[i]).innerHTML = "Name:" + allcakes[i].name + " Price: " +
+//     allCakes[i].price +
+//    " Description: " + allCakes[i].description;
+// }
 
 let allCookies = [
   choc_cookie,
@@ -143,3 +143,10 @@ let sugar_cookie = new Pastry(
 //     allCookies[i].price
 //   } </br> Description: ${allCakes[i].description}`;
 // }
+
+
+allCakes.forEach((cake, i) => {
+  document.querySelector(cakeSelector[i]).innerHTML = `Name: ${
+    cake.name
+  } <br> Price: ${cake.price} <br> Description: ${cake.description}`;
+});
