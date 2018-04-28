@@ -112,19 +112,19 @@ let cakeSelector = [
 // }
 
 
-let choc_cookie = new Pastry(
+let chocCookie = new Pastry(
   "$1",
   "chocolate cookie",
   "yummy chocolate cookie"
 );
-let oatmeal_cookie = new Pastry("$1", "oatmeal cookie", "yummy oatmeal cookie");
-let almond_cookie = new Pastry("$1", "almond cookie", "yummy almond cookie");
-let red_velvet_cookie = new Pastry(
+let oatmealCookie = new Pastry("$1", "oatmeal cookie", "yummy oatmeal cookie");
+let almondCookie = new Pastry("$1", "almond cookie", "yummy almond cookie");
+let redVelvetCookie = new Pastry(
   "$1",
   "red velvet cookie",
   "yummy red velvet cookie"
 );
-let sugar_cookie = new Pastry(
+let sugarCookie = new Pastry(
   "$1",
   "chocolate cookie",
   "yummy chocolate cookie"
@@ -136,11 +136,11 @@ let sugar_cookie = new Pastry(
 //   } </br> Description: ${allCakes[i].description}`;
 // }
 let allCookies = [
-  choc_cookie,
-  oatmeal_cookie,
-  almond_cookie,
-  red_velvet_cookie,
-  sugar_cookie
+  chocCookie,
+  oatmealCookie,
+  almondCookie,
+  redVelvetCookie,
+  sugarCookie
 ];
 let cookieSelector = [
   "#cookie1",
